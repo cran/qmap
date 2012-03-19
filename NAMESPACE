@@ -1,0 +1,20 @@
+####################################################
+## Exports
+####################################################
+
+## Export distributions and associated functions
+exportPattern(bernexp)
+exportPattern(berngamma)
+exportPattern(bernlnorm)
+exportPattern(bernweibull)
+
+## Export functions for quantile mapping 
+exportPattern(fitQmap)
+exportPattern(doQmap)
+
+
+####################################################
+## Imports
+####################################################
+
+importFrom(fitdistrplus,mledist) ## required for fitQmapDIST
