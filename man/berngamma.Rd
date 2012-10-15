@@ -108,40 +108,40 @@ rberngamma(n, prob, scale, shape)
   A. J. Downscaling extremes - an intercomparison of multiple
   statistical methods for present climate. Journal of
   Climate, American Meteorological Society, early online release,
-  2012. doi:10.1175/JCLI-D-11-00408.1
+  2012, doi:10.1175/JCLI-D-11-00408.1.
   
   Cannon, A. J. Probabilistic Multisite Precipitation Downscaling by an
   Expanded Bernoulli-Gamma Density Network. Journal of
   Hydrometeorology, American Meteorological Society, 2008, 9,
-  1284-1300. doi:10.1175/2008JHM960.1
+  1284-1300, doi:10.1175/2008JHM960.1.
 
   Cannon, A. J. Neural networks for probabilistic environmental
   prediction: Conditional Density Estimation Network Creation and
   Evaluation (CaDENCE) in R. Computers & Geosciences, 2012, 41, 126 -
-  135. doi:10.1016/j.cageo.2011.08.023
+  135, doi:10.1016/j.cageo.2011.08.023.
   
   Li, H.; Sheffield, J. & Wood, E. F. Bias correction of monthly
   precipitation and temperature fields from Intergovernmental Panel on
   Climate Change AR4 models using equidistant quantile matching.
-  J. Geophys. Res., AGU, 2010, 115, D10101. doi:10.1029/2009JD012882
+  J. Geophys. Res., AGU, 2010, 115, D10101, doi:10.1029/2009JD012882.
 
   Mooley, D. A. Gamma Distribution Probability Model for Asian Summer
   Monsoon Monthly Rainfall. Monthly Weather Review, 1973, 101,
-  160-176. doi:10.1175/1520-0493(1973)101<0160:GDPMFA>2.3.CO;2 
+  160-176, doi:10.1175/1520-0493(1973)101<0160:GDPMFA>2.3.CO;2.
   
   Piani, C.; Haerter, J. & Coppola, E. Statistical bias correction for
   daily precipitation in regional climate models over Europe. Theoretical
   and Applied Climatology, 2010, 99,
-  187-192. doi:10.1007/s00704-009-0134-9
+  187-192, doi:10.1007/s00704-009-0134-9.
 
   Thom, H. C. S. Approximate convolution of the gamma and mixed gamma
   distributions. Monthly Weather Review, 1968, 96,
-  883-886. doi:10.1175/1520-0493(1968)096<0883:ACOTGA>2.0.CO;2 
+  883-886, doi:10.1175/1520-0493(1968)096<0883:ACOTGA>2.0.CO;2.
 
   Sloughter, J. M. L.; Raftery, A. E.; Gneiting, T. & Fraley,
   C. Probabilistic Quantitative Precipitation Forecasting Using Bayesian
   Model Averaging. Monthly Weather Review, 2007, 135,
-  3209-3220. doi:10.1175/MWR3441.1
+  3209-3220, doi:10.1175/MWR3441.1.
 }
 
 \author{

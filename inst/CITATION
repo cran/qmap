@@ -1,0 +1,33 @@
+citHeader("To cite package 'qmap' in publications use:")
+
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date, perl = TRUE)
+vers <- paste("R package version", meta$Version)
+
+citEntry(entry="Manual",
+         title = "qmap: Statistical transformations for post-processing climate model output",
+         author = personList(as.person("Lukas Gudmundsson")),
+         year = year,
+         note = vers,
+         textVersion =
+         paste("Gudmundsson, L. (",year, "). qmap: Statistical transformations for post-processing climate model output. ", 
+               vers, ".", sep=""))
+
+citEntry(entry="Article",
+	title = "Technical Note: Downscaling RCM precipitation to the station scale using statistical transformations - 
+	         a comparison of methods", 
+	 author = personList(as.person("L. Gudmundsson"),
+	 	  	     as.person("J. B. Bremnes"),
+			     as.person("J. E. Haugen"),
+			     as.person("T. Engen-Skaugen") 
+	 ),
+	 journal = "Hydrology and Earth System Sciences",
+	 year = "2012",
+	 volume = "16",
+	 pages = "3383-3390",
+	 number = "9",
+	 doi = "10.5194/hess-16-3383-2012",
+	 textVersion ="Gudmundsson, L.; Bremnes, J. B.; Haugen, J. E. & Engen-Skaugen, T. 
+	 Technical Note: Downscaling RCM precipitation to the station scale using statistical 
+	 transformations - a comparison of methods. Hydrology and Earth System Sciences, 
+	 2012, 16, 3383-3390, doi:10.5194/hess-16-3383-2012."
+)

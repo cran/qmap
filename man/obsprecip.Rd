@@ -50,8 +50,8 @@ data(modprecip)
 \references{
   Forland, E. J.; Benestad, R.; Hanssen-Bauer, I.; Haugen, J. E. &
   Skaugen, T. E. Temperature and Precipitation Development at Svalbard 
-  1900-2100. Advances in Meteorology, 2011, Volume 2011, 893790. doi:
-  10.1155/2011/893790 
+  1900-2100. Advances in Meteorology, 2011, Volume 2011, 893790, doi:
+  10.1155/2011/893790.
 }
 
 \examples{

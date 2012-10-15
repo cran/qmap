@@ -130,7 +130,16 @@ doQmapQUANT(x,fobj,...)
   Boe, J.; Terray, L.; Habets, F. & Martin, E. Statistical and dynamical
   downscaling of the Seine basin climate for hydro-meteorological
   studies. International Journal of Climatology, 2007, 27,
-  1643-1655. doi: 10.1002/joc.1602.  
+  1643-1655, doi: 10.1002/joc.1602.
+
+  For a general assessment of the methods see:
+
+  Gudmundsson, L.; Bremnes, J. B.; Haugen, J. E. & Engen-Skaugen,
+  T. Technical Note: Downscaling RCM precipitation to the station scale
+  using statistical transformations - a comparison of methods. Hydrology
+  and Earth System Sciences, 2012, 16, 3383-3390,
+  doi:10.5194/hess-16-3383-2012.   
+
 }
 \author{
   Lukas Gudmundsson

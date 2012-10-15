@@ -69,9 +69,19 @@ doQmap(x, fobj, ...)
   \code{data.frame} depending on the format of \code{x}. 
 }
 
+\references{
+  Gudmundsson, L.; Bremnes, J. B.; Haugen, J. E. & Engen-Skaugen,
+  T. Technical Note: Downscaling RCM precipitation to the station scale
+  using statistical transformations - a comparison of methods, Hydrology
+  and Earth System Sciences, 2012, 16, 3383-3390,
+  doi:10.5194/hess-16-3383-2012.  
+}
+
 \author{
   Lukas Gudmundsson
 }
+
+
 
 \seealso{
   \code{\link{fitQmapDIST}}, \code{\link{fitQmapPTF}},
