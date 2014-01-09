@@ -76,10 +76,10 @@ pp <- seq(0.01,0.99,by=0.01)
 qq <-quantile(obsprecip[,1],probs=pp) 
 
 plot(qq,pp)
-lines(qbernexp((0:100)/100,
-                   prob=ts$prob,
-                   rate=ts$rate),
-      (0:100)/100,col="red")
+lines(qbernexp(pp,
+               prob=ts$prob,
+               rate=ts$rate),
+      pp,col="red")
 
 plot(qq,pp)
 lines(qq,

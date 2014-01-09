@@ -111,10 +111,11 @@ doQmapDIST(x,fobj,...)
     observed (suffix \code{.o}) and the modelled (suffix \code{.m})
     data. The rows correspond to each pair of time series in \code{obs}
     and \code{mod}.}
-
   \code{doQmapDIST} returns a \code{numeric} vector, \code{matrix} or
   \code{data.frame} depending on the format of \code{x}. 
 }
+
+
 
 \references{
   Piani, C.; Haerter, J. & Coppola, E. Statistical bias correction for
@@ -138,7 +139,6 @@ doQmapDIST(x,fobj,...)
   using statistical transformations - a comparison of methods. Hydrology
   and Earth System Sciences, 2012, 16, 3383-3390,
   doi:10.5194/hess-16-3383-2012.   
-
 }
 
 \author{
@@ -237,16 +237,17 @@ legend("topleft",
 ## fitting procedure more stable
 qm2.fit <- fitQmapDIST(sqrt(obsprecip),sqrt(modprecip),
                        distr="berngamma",
-                       qstep=0.01)
+                       qstep=0.001)
 qm2 <- doQmapDIST(sqrt(modprecip),qm2.fit)^2
 
-op <- par(mfrow=c(1,3))
-for(i in 1:3){
-  plot(sqrtquant(modprecip[,i]),
-       sqrtquant(obsprecip[,i]))
-  lines(sqrtquant(modprecip[,i]),
-        sqrtquant(qm2[,i]),col="red")
+if(!any(is.na(qm2.fit$par))){
+  op <- par(mfrow=c(1,3))
+  for(i in 1:3){
+    plot(sqrtquant(modprecip[,i]),
+         sqrtquant(obsprecip[,i]))
+    lines(sqrtquant(modprecip[,i]),
+          sqrtquant(qm2[,i]),col="red")
+  }
+ par(op)
 }
-par(op)
-
 }

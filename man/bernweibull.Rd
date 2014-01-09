@@ -92,11 +92,11 @@ pp <- seq(0.01,0.99,by=0.01)
 qq <-quantile(obsprecip[,1],probs=pp) 
 
 plot(qq,pp)
-lines(qbernweibull((0:100)/100,
+lines(qbernweibull(pp,
                    prob=ts$prob,
                    scale=ts$scale,
                    shape=ts$shape),
-      (0:100)/100,col="red")
+      pp,col="red")
 
 plot(qq,pp)
 lines(qq,

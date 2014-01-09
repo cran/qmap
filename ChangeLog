@@ -1,3 +1,6 @@
+version 1.0-2:
+	* fixing issue in the example of fitQmapDIST, occuring in R-devel version on Mac
+	* small updates in the doccumentation of: bernlnorm, bernexp, bernweibull
 version 1.0-1:
 	* updated package citation
 	* small corrections in package documentation
