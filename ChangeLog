@@ -1,3 +1,8 @@
+version 1.0-3:
+	* fix several small bugs: change "min(length(ys),length(ys))" to "min(length(xs),length(ys))"
+	* in fitQumapQUANT.default
+	* in fitQmapRQUANT.default
+	* in fitQmapSSPLIN.default
 version 1.0-2:
 	* fixing issue in the example of fitQmapDIST, occuring in R-devel version on Mac
 	* small updates in the doccumentation of: bernlnorm, bernexp, bernweibull

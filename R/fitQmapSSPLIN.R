@@ -9,7 +9,7 @@ fitQmapSSPLIN.default <- function(obs,mod,wet.day=TRUE,qstep=0.01,spline.par,...
   ys <- na.omit(obs)
   xs <- na.omit(mod)
   if(length(xs)!=length(ys)){
-    hn <- min(length(ys),length(ys))
+    hn <- min(length(xs),length(ys))
     ## quantile algorithm 'type=8' appeares to
     ## be reccomended. See help(quantile) and
     ## Hyndman & Fan (1996) mentioned therein

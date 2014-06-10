@@ -1,5 +1,5 @@
-daccfc80f189bb320e11364f913304dc *ChangeLog
-010add721d41ba122ce4a837c7241d6a *DESCRIPTION
+f2951a72be708c2df7f2b4690ec904c0 *ChangeLog
+17d06cf31fc18e04f49fd48e26afd33e *DESCRIPTION
 9b0f5874c9c4c4cfcb13fb21738c0797 *NAMESPACE
 c67e7ce0c00f223914bcddde958ff89e *R/bernexp.R
 6d802c70c2ab76e9da045f00f90048c8 *R/berngamma.R
@@ -14,9 +14,9 @@ f8f29c67f5520595cf5b600b2322312b *R/doQmapRQUANT.R
 e55ebf6b49540c7ce51effcb133c261c *R/fitQmap.R
 9485c0b3a0c5366d71dc615a25953591 *R/fitQmapDIST.R
 3a0a0b71516a48e8702519201a6f2a3a *R/fitQmapPTF.R
-c14029a43637fc3bd9764a3ab1cb5d55 *R/fitQmapQUANT.R
-396eb2fb59938f0418e79f689563ef08 *R/fitQmapRQUANT.R
-2a7392c0e2664601c65cfb910a9a44d8 *R/fitQmapSSPLIN.R
+68d396a79a1312c99e095d324b2beecb *R/fitQmapQUANT.R
+111d5a9e761b29456490d2988c0d93b2 *R/fitQmapRQUANT.R
+42301ef0af6ef412fb58dc7ad33e905e *R/fitQmapSSPLIN.R
 60050d2505651043e98ac69efb6e5008 *R/startbernexp.R
 46a40e8e6cd1a867bf97cfa1acbfc330 *R/startberngamma.R
 3df8b70987210532be44a329d892af1f *R/startbernlnorm.R
@@ -35,7 +35,7 @@ f071060da78f4c13f82fd6adef75e0bb *man/fitqmapdist.Rd
 9fd8130bd8fb4a4b261bb58c26e953d2 *man/fitqmaprquant.Rd
 f1b2541578bd1b72bb87cd758b69e6d7 *man/fitqmapssplin.Rd
 0e03143129f04b9ccf073c01deb70ebe *man/obsprecip.Rd
-4cc1b67d29a2c557b1766e0f81875b11 *man/qmap-package.Rd
+f383c8ee03d65ed4718bdf609aeba9af *man/qmap-package.Rd
 2713bd425f15d63b75426c4f0115b5ff *man/startbernexp.Rd
 2caa6ea0d236d9ebdda47a9c6ed69e59 *man/startberngamma.Rd
 2663792372ff216ba5fd2c8ea1485b03 *man/startbernlnorm.Rd
