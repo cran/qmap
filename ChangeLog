@@ -1,3 +1,8 @@
+version 1.0-4:
+	* Bug fix in doQmapPTF.matrix
+	* Updated NAMESPACE to include S3 methods registration
+	* Changed title to be in title case
+	* Added importFrom("stats",...) to NAMESPACE
 version 1.0-3:
 	* fix several small bugs: change "min(length(ys),length(ys))" to "min(length(xs),length(ys))"
 	* in fitQumapQUANT.default

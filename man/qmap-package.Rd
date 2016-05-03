@@ -3,7 +3,7 @@
 \alias{qmap}
 \docType{package}
 \title{
-  Statistical transformations for post-processing climate model output
+  Statistical Transformations for Post-Processing Climate Model Output
 }
 \description{
   Empirical adjustment (bias correction) of variables originating from
@@ -17,8 +17,8 @@
 \tabular{ll}{
 Package: \tab qmap\cr
 Type: \tab Package\cr
-Version: \tab 1.0-3\cr
-Date: \tab 2014-06-10\cr
+Version: \tab 1.0-4\cr
+Date: \tab 2016-05-03\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
 }

@@ -9,9 +9,9 @@ fitQmapDIST.default <- function(obs,mod,distr="berngamma",start.fun,
 ###
 ### obs: oserved time series
 ### mod: modelled time series
-### distr: A character string ‘"name"’ naming a distribution for which
-###        the corresponding density function ‘dname’ and the
-###        corresponding distribution ‘pname’ must be classically
+### distr: A character string '"name"' naming a distribution for which
+###        the corresponding density function 'dname' and the
+###        corresponding distribution 'pname' must be classically
 ###          defined. 
 ### start.fun: function estimating starting values for
 ###            parameter optimisation. Default starting

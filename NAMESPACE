@@ -12,9 +12,60 @@ exportPattern(bernweibull)
 exportPattern(fitQmap)
 exportPattern(doQmap)
 
+####################################################
+## Register S3 methods
+####################################################
+
+S3method(doQmapDIST,data.frame)
+S3method(doQmapDIST,default)
+S3method(doQmapDIST,matrix)
+
+S3method(doQmapPTF,data.frame)
+S3method(doQmapPTF,default)
+S3method(doQmapPTF,matrix)
+
+S3method(doQmapQUANT,data.frame)
+S3method(doQmapQUANT,default)
+S3method(doQmapQUANT,matrix)
+
+S3method(doQmapRQUANT,data.frame)
+S3method(doQmapRQUANT,default)
+S3method(doQmapRQUANT,matrix)
+
+S3method(doQmapSSPLIN,data.frame)
+S3method(doQmapSSPLIN,default)
+S3method(doQmapSSPLIN,matrix)
+
+S3method(fitQmapDIST,data.frame)
+S3method(fitQmapDIST,default)
+S3method(fitQmapDIST,matrix)
+
+S3method(fitQmapPTF,data.frame)
+S3method(fitQmapPTF,default)
+S3method(fitQmapPTF,matrix)
+
+S3method(fitQmapQUANT,data.frame)
+S3method(fitQmapQUANT,default)
+S3method(fitQmapQUANT,matrix)
+
+S3method(fitQmapRQUANT,data.frame)
+S3method(fitQmapRQUANT,default)
+S3method(fitQmapRQUANT,matrix)
+
+S3method(fitQmapSSPLIN,data.frame)
+S3method(fitQmapSSPLIN,default)
+S3method(fitQmapSSPLIN,matrix)
+
+
 
 ####################################################
 ## Imports
 ####################################################
 
 importFrom(fitdistrplus,mledist) ## required for fitQmapDIST
+
+importFrom("stats", "approx", "coef", "dexp", "dgamma", "dlnorm",
+           "dweibull", "lm", "na.omit", "optim", "pexp", "pgamma",
+           "plnorm", "predict", "pweibull", "qexp", "qgamma", "qlnorm",
+           "quantile", "qweibull", "rexp", "rgamma", "rlnorm", "runif",
+           "rweibull", "sd", "smooth.spline", "splinefun", "var")
