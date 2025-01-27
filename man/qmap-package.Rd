@@ -22,7 +22,6 @@ Date: \tab 2016-05-03\cr
 License: \tab GPL >= 2\cr
 LazyLoad: \tab yes\cr
 }
-
 }
 \author{Lukas Gudmundsson}
 \references{
@@ -32,8 +31,18 @@ LazyLoad: \tab yes\cr
   and Earth System Sciences, 2012, 16, 3383-3390,
   doi:10.5194/hess-16-3383-2012.  
 }
-\keyword{quantile mapping, quantile matching, cumulative distribution
-  function (cdf) matching, quantile - quantile transformation, histogram
-  equalisation, histogram matching, probability mapping, distribution
-  mapping, model output statistics, bias correction, downscaling}  
+\keyword{distribution}
+\concept{quantile mapping}
+\concept{quantile matching}
+\concept{cumulative distribution function (cdf) matching}
+\concept{quantile - quantile transformation}
+\concept{histogram equalisation}
+\concept{histogram matching}
+\concept{probability mapping} 
+\concept{distribution mapping}
+\concept{Probability integral transform}
+\concept{model output statistics}
+\concept{bias correction}
+\concept{downscaling}
+
 

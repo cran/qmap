@@ -153,16 +153,31 @@ fitQmapPTF.default <- function(obs,mod,
       opar$method <- "Nelder-Mead"
     }
   }
-  opt <- try(do.call(optim,opar),silent=TRUE)
-  if(class(opt)=="try-error"){
-    warning("optim 'method'",opar$method,
-            "failed. Optimizing with 'SANN'\n",
-            "possibly unstable result")
-    opar$method <- "SANN"
-    opar$lower <- NULL
-    opar$upper <- NULL
-    opt <- do.call(optim,opar)
-  } 
+  # opt <- try(do.call(optim,opar),silent=TRUE)
+  # if(class(opt)=="try-error"){
+  # # if (is(tr,"try-error")) {
+  #   warning("optim 'method'",opar$method,
+  #           "failed. Optimizing with 'SANN'\n",
+  #           "possibly unstable result")
+  #   opar$method <- "SANN"
+  #   opar$lower <- NULL
+  #   opar$upper <- NULL
+  #   opt <- do.call(optim,opar)
+  # } 
+  
+  
+  opt <- tryCatch(do.call(optim,opar),
+                  error = function(e){
+                    warning("optim 'method'",opar$method,
+                            "failed. Optimizing with 'SANN'\n",
+                            "possibly unstable result")
+                    opar$method <- "SANN"
+                    opar$lower <- NULL
+                    opar$upper <- NULL
+                    do.call(optim,opar)
+                  })
+  
+  
   ppar <- t(as.matrix(opt$par))
   op <- list(tfun=tfun,
              par=ppar,
@@ -179,15 +194,15 @@ fitQmapPTF.matrix <- function(obs,mod,...){
   hind <- 1:NN
   names(hind) <- colnames(mod)
   xx <- lapply(hind,function(i){
-    tr <- try(fitQmapPTF.default(obs=obs[,i],mod=mod[,i],...),
-              silent=TRUE)
-    if(any(class(tr)=="try-error")){
-      warning("model identification for ",names(hind)[i],
-              " failed\n NA's produced")
-      NULL
-    } else{
-      tr
-    }
+    tr <- tryCatch(fitQmapPTF.default(obs=obs[,i],mod=mod[,i],...),
+                   error = function(e){
+                     warning("model identification for ",names(hind)[i],
+                             " failed\n NA's produced")
+                     NULL
+                   })
+    return(tr)
+    
+    
   })
   xx.NULL <- sapply(xx,is.null)
   tfun <- xx[!xx.NULL][[1]]$tfun

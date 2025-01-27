@@ -55,9 +55,7 @@ rbernlnorm(n, prob, meanlog, sdlog)
 \note{
   The implementation is largely based on the \code{blnorm} family in
   the \code{CaDENCE}-package (Cannon, 2012) that was only available as
-  test version at time of implementation (Mar. 2012). The
-  \code{CaDENCE}-package is available at
-  \url{http://www.eos.ubc.ca/~acannon/CaDENCE/}.
+  test version at time of implementation (Mar. 2012). 
 }
 
 \references{

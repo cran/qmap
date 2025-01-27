@@ -55,18 +55,18 @@ doQmapRQUANT.matrix <- function(x,fobj,...){
   hf <- list()
   class(hf) <- class(fobj)
   xx <- sapply(hind,function(i){
-    ## hf <- fobj
     hf$par$modq <- matrix(fobj$par$modq[,i],ncol=1)
     hf$par$fitq <- matrix(fobj$par$fitq[,i],ncol=1)
     hf$par$slope <- matrix(fobj$par$slope[,i],ncol=1,
                            dimnames=list(c("lower","upper"),NULL))
     hf$wet.day <- fobj$wet.day[i]
-    tr <- try(doQmapRQUANT.default(x[,i],hf,...),silent=TRUE)
-    if(class(tr)=="try-error"){
-      warning("Quantile mapping for ",names(hind)[i],
-              " failed NA's produced.")
-      tr <- rep(NA,nrow(x))
-    }
+    tr <- tryCatch(doQmapRQUANT.default(x[,i],hf,...),
+                   error = function(e){
+                     warning("Quantile mapping for ",names(hind)[i],
+                             " failed NA's produced.")
+                     rep(NA,nrow(x))
+                   })
+    
     return(tr)
   })
   rownames(xx) <- rownames(x)

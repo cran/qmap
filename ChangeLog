@@ -1,3 +1,8 @@
+version 1.0-5:
+  * small (and illustrative) adjustment to the examples for doQmapDIST to prevent 
+    crash due to non convergence of maximum likelyhood fit. 
+  * Removing depreciated URLs from the doccumentation
+  * using now 'tryCatch' in several functions for exception handling
 version 1.0-4:
 	* Bug fix in doQmapPTF.matrix
 	* Updated NAMESPACE to include S3 methods registration

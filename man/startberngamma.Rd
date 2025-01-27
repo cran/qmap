@@ -34,13 +34,13 @@ startberngamma(x)
 
 \note{
   In this package \code{startberngamma} is intended to be used in
-  conjunction with \code{\link{fitQmapDIST}} (and \code{\link{mledist}})
+  conjunction with \code{\link{fitQmapDIST}} (and \code{\link[fitdistrplus]{mledist}})
   with parameter \code{distr="berngamma"}.
 }
 
 \seealso{
   \code{\link{fitQmapDIST}}, \code{\link{berngamma}},
-  \code{\link{fitdist}} 
+  \code{\link[fitdistrplus]{fitdist}} 
 }
 \examples{
 gg <- rberngamma(n=300, prob=0.2, scale=1, shape=1)

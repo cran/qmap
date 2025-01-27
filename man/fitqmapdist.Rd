@@ -56,7 +56,7 @@ doQmapDIST(x,fobj,...)
     \code{\link{berngamma}}, \code{\link{bernweibull}},
       \code{\link{bernlnorm}}, \code{\link{bernexp}} and the  
     distributions mentioned in the documentation of
-    \code{\link{mledist}}.
+    \code{\link[fitdistrplus]{mledist}}.
   }
   \item{qstep}{
     \code{NULL} or a numeric value between 0 and 1.
@@ -69,7 +69,7 @@ doQmapDIST(x,fobj,...)
   }
   \item{mlepar}{
     a named list. Names correspond to parameters passed to
-    \code{\link{mledist}} note that \code{start} may be overwritten by
+    \code{\link[fitdistrplus]{mledist}} note that \code{start} may be overwritten by
     \code{start.fun} See examples.  
   }
   \item{x}{
@@ -150,7 +150,8 @@ doQmapDIST(x,fobj,...)
     \code{\link{berngamma}}, \code{\link{startbernweibull}},
     \code{\link{bernweibull}}, \code{\link{startbernlnorm}},
     \code{\link{bernlnorm}}, \code{\link{startbernexp}},
-    \code{\link{bernexp}}, \code{\link{mledist}}, \code{\link{fitdist}}
+    \code{\link{bernexp}}, \code{\link[fitdistrplus]{mledist}},
+    \code{\link[fitdistrplus]{fitdist}}
 }
 \examples{
 data(obsprecip)
@@ -162,11 +163,17 @@ qm.fit <- fitQmapDIST(obsprecip[,1],modprecip[,1],
 qm <- doQmapDIST(modprecip[,1],qm.fit)
 
 
+# adjusting settings of the maximum likelyhood estimator 
+# here changing the convergence criterion in the optimizer 'optim'
+# Note: the selected value might be to large for true applications.
+# Please check for your context.
 qm.lnorm.fit <- fitQmapDIST(obsprecip[,1],modprecip[,1],
                       distr="bernlnorm",
-                      qstep=0.001)
+                      qstep=0.001,
+                      mlepar = list(control = list(
+                            reltol = 1e-2
+                      )))
 qm.lnorm <- doQmapDIST(modprecip[,1],qm.lnorm.fit)
-
 
 qm.weibu.fit <- fitQmapDIST(obsprecip[,1],modprecip[,1],
                       distr="bernweibull",

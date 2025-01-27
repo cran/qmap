@@ -46,12 +46,14 @@ doQmapQUANT.matrix <- function(x,fobj,...){
     hf$par$modq <- matrix(fobj$par$modq[,i],ncol=1)
     hf$par$fitq <- matrix(fobj$par$fitq[,i],ncol=1)
     hf$wet.day <- fobj$wet.day[i]
-    tr <- try(doQmapQUANT.default(x[,i],hf,...),silent=TRUE)
-    if(class(tr)=="try-error"){
-      warning("Quantile mapping for ",names(hind)[i],
-              " failed NA's produced.")
-      tr <- rep(NA,nrow(x))
-    }
+    tr <- tryCatch(doQmapQUANT.default(x[,i],hf,...),
+                   error = function(e){
+                     warning("Quantile mapping for ",names(hind)[i],
+                             " failed NA's produced.")
+                     rep(NA,nrow(x)) 
+                   }
+    )
+    
     return(tr)
   })
   rownames(xx) <- rownames(x)

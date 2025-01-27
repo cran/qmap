@@ -43,8 +43,7 @@ data(modprecip)
 
 \source{
   The observations are taken form the observation network of the
-  Norwegian meteorological institute (\url{www.met.no}). The data are
-  available for download at \url{http://eklima.met.no}.
+  Norwegian meteorological institute (\url{https://www.met.no/}).
 }
 
 \references{

@@ -35,13 +35,13 @@ startbernlnorm(x)
 
 \note{
   In this package \code{startbernlnorm} is intended to be used in
-  conjunction with \code{\link{fitQmapDIST}} (and \code{\link{mledist}})
+  conjunction with \code{\link{fitQmapDIST}} (and \code{\link[fitdistrplus]{mledist}})
   with parameter \code{distr="bernlnorm"}.
 }
 
 \seealso{
   \code{\link{fitQmapDIST}}, \code{\link{bernlnorm}},
-  \code{\link{fitdist}}
+  \code{\link[fitdistrplus]{fitdist}}
 }
 
 \examples{

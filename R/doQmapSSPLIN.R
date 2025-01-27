@@ -30,12 +30,13 @@ doQmapSSPLIN.matrix <- function(x,fobj,...){
   xx <- sapply(hind,function(i){
     hf$par <- fobj$par[i]
     hf$wet.day <- fobj$wet.day[i]
-    tr <- try(doQmapSSPLIN.default(x[,i],hf,...),silent=TRUE)
-    if(class(tr)=="try-error"){
-      warning("Quantile mapping for ",names(hind)[i],
-              " failed NA's produced.")
-      tr <- rep(NA,nrow(x))
-    }
+    tr <- tryCatch(doQmapSSPLIN.default(x[,i],hf,...),
+                   error = function(e){
+                     warning("Quantile mapping for ",names(hind)[i],
+                             " failed NA's produced.")
+                     rep(NA,nrow(x))
+                   })
+    
     return(tr)
   })
   rownames(xx) <- rownames(x)

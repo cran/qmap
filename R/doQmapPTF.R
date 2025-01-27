@@ -40,30 +40,27 @@ doQmapPTF.matrix <- function (x, fobj, ...) {
     tfun <- fobj$tfun
     funpar <- fobj$par
     xx <- sapply(hind, function(i) {
-        tr <- try({
-            xh <- x[, i]
-            ## start bug fix
-            ## added: 27.04.2016
-            wett <- if (!is.null(fobj$wet.day)) {
-                xh >= fobj$wet.day[i]
-            } else {
-                rep(TRUE, length(xh))
-            }
-            ## wett <- xh >= fobj$wet.day[i]
-            ## end bug fix
-            xh[wett] <- do.call(tfun, c(list(xh[wett]), as.list(funpar[i,
-                ])))
-            xh[!wett] <- 0
-            if (!is.null(fobj$wet.day))
-                xh[xh < 0] <- 0
-            xh
-        }, silent = TRUE)
-        if (class(tr) == "try-error") {
-            warning("Quantile mapping for ", names(hind)[i],
-                " failed NA's produced.")
-            tr <- rep(NA, nrow(x))
+      tr <- tryCatch({
+        xh <- x[, i]
+        wett <- if (!is.null(fobj$wet.day)) {
+          xh >= fobj$wet.day[i]
+        } else {
+          rep(TRUE, length(xh))
         }
-        return(tr)
+        xh[wett] <- do.call(tfun, c(list(xh[wett]), as.list(funpar[i,
+        ])))
+        xh[!wett] <- 0
+        if (!is.null(fobj$wet.day))
+          xh[xh < 0] <- 0
+        xh
+      }, 
+      error = function(e) {
+        warning("Quantile mapping for ", names(hind)[i],
+                " failed NA's produced.")
+        rep(NA, nrow(x))
+      })
+      
+      return(tr)
     })
     rownames(xx) <- rownames(x)
     return(xx)

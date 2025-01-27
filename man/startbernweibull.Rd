@@ -36,12 +36,12 @@ startbernweibull(x)
 \note{
   In this package \code{startbernweibull} is intended to be used in
   conjunction with \code{\link{fitQmapDIST}} (and
-  \code{\link{mledist}}) with parameter \code{distr="bernweibull"}. 
+  \code{\link[fitdistrplus]{mledist}}) with parameter \code{distr="bernweibull"}. 
 }
 
 \seealso{
   \code{\link{fitQmapDIST}}, \code{\link{bernweibull}},
-  \code{\link{fitdist}}
+  \code{\link[fitdistrplus]{fitdist}}
 }
 
 \examples{

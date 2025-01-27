@@ -34,13 +34,13 @@ startbernexp(x)
 
 \note{
   In this package \code{startbernexp} is intended to be used in
-  conjunction with \code{\link{fitQmapDIST}} (and \code{\link{mledist}})
+  conjunction with \code{\link{fitQmapDIST}} (and \code{\link[fitdistrplus]{mledist}})
   with parameter \code{distr="bernexp"}.
 }
 
 \seealso{
   \code{\link{fitQmapDIST}}, \code{\link{bernexp}},
-  \code{\link{fitdist}}
+  \code{\link[fitdistrplus]{fitdist}}
 }
 
 \examples{

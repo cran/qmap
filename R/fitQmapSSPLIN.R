@@ -63,15 +63,14 @@ fitQmapSSPLIN.matrix <- function(obs,mod,...){
   hind <- 1:NN
   names(hind) <- colnames(mod)
   xx <- lapply(hind,function(i){
-    tr <- try(fitQmapSSPLIN.default(obs=obs[,i],mod=mod[,i],...),
-              silent=TRUE)
-    if(any(class(tr)=="try-error")){
-      warning("model identification for ",names(hind)[i],
-              " failed\n NA's produced.")
-      NULL
-    } else{
-      tr
-    }
+    tr <- tryCatch(fitQmapSSPLIN.default(obs=obs[,i],mod=mod[,i],...),
+                   error = function(e){
+                     # if (is(tr,"try-error")) {
+                     warning("model identification for ",names(hind)[i],
+                             " failed\n NA's produced.")
+                     NULL
+                   })
+    return(tr)
   })
   xx.NULL <- sapply(xx,is.null) 
   ppar <- lapply(xx,function(x)x$par[[1]])
