@@ -121,16 +121,16 @@ doQmapDIST(x,fobj,...)
   Piani, C.; Haerter, J. & Coppola, E. Statistical bias correction for
   daily precipitation in regional climate models over
   Europe. Theoretical and Applied Climatology, 2010, 99,
-  187-192, doi:10.1007/s00704-009-0134-9.
+  187-192, <doi:10.1007/s00704-009-0134-9>.
 
   Li, H.; Sheffield, J. & Wood, E. F. Bias correction of monthly
   precipitation and temperature fields from Intergovernmental Panel on
   Climate Change AR4 models using equidistant quantile matching.
-  J. Geophys. Res., 2010, 115, D10101, doi:10.1029/2009JD012882.
+  J. Geophys. Res., 2010, 115, D10101, <doi:10.1029/2009JD012882>.
 
   Ines, A. V. & Hansen, J. W. Bias correction of daily GCM rainfall for
   crop simulation studies. Agricultural and Forest Meteorology, 2006,
-  138, 44 - 53, doi: 10.1016/j.agrformet.2006.03.009.
+  138, 44 - 53, <doi:10.1016/j.agrformet.2006.03.009>.
 
   For a general assessment of the methods see:
   
@@ -138,7 +138,7 @@ doQmapDIST(x,fobj,...)
   T. Technical Note: Downscaling RCM precipitation to the station scale
   using statistical transformations - a comparison of methods. Hydrology
   and Earth System Sciences, 2012, 16, 3383-3390,
-  doi:10.5194/hess-16-3383-2012.   
+  <doi:10.5194/hess-16-3383-2012>.   
 }
 
 \author{

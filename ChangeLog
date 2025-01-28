@@ -1,21 +1,27 @@
+version 1.0-6
+  * using Authors@R in description files and added ORCID
+  * using bibentry in CITATION file
+  * using pckage anchors in \citation in documentation
+  * using now \concept in stead of \keyword for complex terms in documentation
+  * Encoleg DOIs with angle brackets such that <doi:10.prefix/suffix>.
 version 1.0-5:
   * small (and illustrative) adjustment to the examples for doQmapDIST to prevent 
     crash due to non convergence of maximum likelyhood fit. 
   * Removing depreciated URLs from the doccumentation
   * using now 'tryCatch' in several functions for exception handling
 version 1.0-4:
-	* Bug fix in doQmapPTF.matrix
-	* Updated NAMESPACE to include S3 methods registration
-	* Changed title to be in title case
-	* Added importFrom("stats",...) to NAMESPACE
+  * Bug fix in doQmapPTF.matrix
+  * Updated NAMESPACE to include S3 methods registration
+  * Changed title to be in title case
+  * Added importFrom("stats",...) to NAMESPACE
 version 1.0-3:
-	* fix several small bugs: change "min(length(ys),length(ys))" to "min(length(xs),length(ys))"
-	* in fitQumapQUANT.default
-	* in fitQmapRQUANT.default
-	* in fitQmapSSPLIN.default
+  * fix several small bugs: change "min(length(ys),length(ys))" to "min(length(xs),length(ys))"
+  * in fitQumapQUANT.default
+  * in fitQmapRQUANT.default
+  * in fitQmapSSPLIN.default
 version 1.0-2:
-	* fixing issue in the example of fitQmapDIST, occuring in R-devel version on Mac
-	* small updates in the doccumentation of: bernlnorm, bernexp, bernweibull
+  * fixing issue in the example of fitQmapDIST, occuring in R-devel version on Mac
+  * small updates in the doccumentation of: bernlnorm, bernexp, bernweibull
 version 1.0-1:
-	* updated package citation
-	* small corrections in package documentation
+  * updated package citation
+  * small corrections in package documentation

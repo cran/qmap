@@ -63,7 +63,7 @@ rbernweibull(n, prob, scale, shape)
   Cannon, A. J. Neural networks for probabilistic environmental
   prediction: Conditional Density Estimation Network Creation and
   Evaluation (CaDENCE) in R. Computers & Geosciences, 2012, 41, 126 -
-  135, doi:10.1016/j.cageo.2011.08.023.
+  135, <doi:10.1016/j.cageo.2011.08.023>.
 }
 
 \author{

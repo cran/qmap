@@ -29,7 +29,7 @@ LazyLoad: \tab yes\cr
   T. Technical Note: Downscaling RCM precipitation to the station scale
   using statistical transformations - a comparison of methods. Hydrology
   and Earth System Sciences, 2012, 16, 3383-3390,
-  doi:10.5194/hess-16-3383-2012.  
+  <doi:10.5194/hess-16-3383-2012>.  
 }
 \keyword{distribution}
 \concept{quantile mapping}

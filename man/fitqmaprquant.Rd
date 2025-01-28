@@ -163,7 +163,7 @@ type=c("linear","linear2","tricub"),...)
   Boe, J.; Terray, L.; Habets, F. & Martin, E. Statistical and dynamical
   downscaling of the Seine basin climate for hydro-meteorological
   studies. International Journal of Climatology, 2007, 27,
-  1643-1655, doi: 10.1002/joc.1602.
+  1643-1655, <doi:10.1002/joc.1602>.
 }
 \author{
   John Bjornar Bremnes and Lukas Gudmundsson

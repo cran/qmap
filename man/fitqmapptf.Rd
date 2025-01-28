@@ -173,12 +173,12 @@ doQmapPTF(x,fobj,...)
   S. & Haerter, J. Statistical bias correction of global simulated daily
   precipitation and temperature for the application of hydrological
   models. Journal of Hydrology, 2010, 395, 199 -
-  215, doi:10.1016/j.jhydrol.2010.10.024.
+  215, <doi:10.1016/j.jhydrol.2010.10.024>.
 
   Dosio, A. & Paruolo, P. Bias correction of the ENSEMBLES
   high-resolution climate change projections for use by impact models:
   Evaluation on the present climate. J. Geophys. Res., AGU, 2011, 116,
-  D16106, doi:10.1029/2011JD015934.
+  D16106, <doi:10.1029/2011JD015934>.
 
   For a general assessment of the methods see:
 
@@ -186,7 +186,7 @@ doQmapPTF(x,fobj,...)
   T. Technical Note: Downscaling RCM precipitation to the station scale
   using statistical transformations - a comparison of methods. Hydrology
   and Earth System Sciences, 2012, 16, 3383-3390,
-  doi:10.5194/hess-16-3383-2012.   
+  <doi:10.5194/hess-16-3383-2012>.   
 
 }
 \author{
